@@ -1,0 +1,91 @@
+html {
+    background-image: url("./images/wholebg.png");
+    background-size: cover;
+}
+
+@font-face {
+    font-family:"Funhouse-Ke17";
+    src: url("./Fonts/Funhouse-Ke17.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:"Nunito-Regular";
+    src: url("./Fonts/Nunito-Regular.ttf") format("truetype");
+}
+
+.join-discord-btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    margin-top: 43%;
+}
+
+.join-discord-btn > img {
+    padding: auto;
+}
+
+.intro-head, .roadmap-head{
+    font-family: 'Funhouse-Ke17', Fallback, sans-serif;
+    color: white;
+    font-size: 60px;
+}
+
+.intro {
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width:40%;
+}
+
+.content-intro, .roadmap-content {
+    font-family: 'Nunito-Regular', Fallback, sans-serif;
+    color: white;
+}
+
+.benefits-head {
+    font-family: 'Funhouse-Ke17', Fallback, sans-serif;
+    color: white;
+    font-size: 60px;
+    margin-top: 9rem;
+    margin-left: 8rem;
+}
+
+.img-benefits {
+    float:left;
+    /* flex-grow: 4; */
+}
+
+.img {
+    padding-left: 6rem;
+    flex-grow: 1;
+} 
+
+.img1 {
+    flex-grow: 1;
+} 
+
+.img2 {
+    flex-grow: 1;   
+    padding-right: 6rem;
+} 
+
+.img-benefits > img {
+    width: 300px;
+}
+
+.benefits-content {
+    display:flex;
+}
+
+.text1 {
+    width: 200px;
+    margin-top: 50px;
+}
+
+
+.roadmap {
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+}
