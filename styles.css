@@ -46,13 +46,8 @@ html {
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
     color: white;
     font-size: 60px;
-    margin-top: 9rem;
+    margin-top: 10rem;
     margin-left: 8rem;
-}
-
-.img-benefits {
-    float:left;
-    /* flex-grow: 4; */
 }
 
 .img {
@@ -65,27 +60,123 @@ html {
 } 
 
 .img2 {
-    flex-grow: 1;   
+    /* flex-grow: 1;    */
     padding-right: 6rem;
 } 
 
 .img-benefits > img {
     width: 300px;
+    z-index: -1;
+    position: relative;
+}
+
+.benefits-img {
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .benefits-content {
     display:flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 700px; */
+    font-family: 'Nunito-Regular', Fallback, sans-serif;
+    color: white;
+    font-size: 15px;
 }
 
 .text1 {
+    margin-top: -20rem;
+    text-align: left;
     width: 200px;
-    margin-top: 50px;
+}
+
+.text2, .text3 {
+    margin-top: -20rem;
+    width: 200px;
+}
+
+.text2 {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.roadmap-head {
+    margin-top: 13rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.roadmap-content {
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}   
+
+.roadmap-content > img {
+    width: 110px;
+}
+
+.timeline-head {
+    font-family: 'Funhouse-Ke17', Fallback, sans-serif;
+    color:white;
+    font-size: 20px;
+    margin-top: 8rem;
+    
+}
+
+.timeline-img > img{
+    width: 100px;
+}
+
+.img1 {
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.img2 {
+    padding-left: 100px;
+}
+
+.road {
+    width: 70rem;
+    /* margin-top: 50rem; */
+    /* left: -20px; */
+    /* right:-0px; */
+    /* position: relative; */
+}
+
+.showcase {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Funhouse-Ke17', Fallback, sans-serif;
+    color: white;
+    font-size: 60px;
+}
+
+.nft-showcase > img {
+    height: 30rem;
+    width: 80rem;
+}
+
+.rarity-img {
+    font-family: 'Funhouse-Ke17', Fallback, sans-serif;
+color: white;
+font-size: 60px;
+display:flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.rarity-img > img {
+    padding-left: 10rem;
 }
 
 
-.roadmap {
-    margin-top: 10rem;
-    margin-left: auto;
-    margin-right: auto;
-    width:30%;
-}
+
+
