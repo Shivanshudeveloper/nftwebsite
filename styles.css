@@ -13,6 +13,11 @@ html {
     src: url("./Fonts/Nunito-Regular.ttf") format("truetype");
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .join-discord-btn {
     margin-left: auto;
     margin-right: auto;
@@ -22,6 +27,7 @@ html {
 
 .join-discord-btn > img {
     padding: auto;
+    cursor: pointer;
 }
 
 .intro-head, .roadmap-head{
@@ -132,6 +138,7 @@ html {
 
 .roadmap-content > img {
     width: 110px;
+    cursor: pointer;
 }
 
 .timeline-head {
@@ -156,8 +163,8 @@ html {
 }
 
 .road {
-    width: 70rem;
-    /* margin-top: 50rem; */
+    width: 99rem;
+    margin-left: -7.9px;
     /* left: -20px; */
     /* right:-0px; */
     /* position: relative; */
@@ -178,16 +185,17 @@ html {
 
 .nft-showcase > img {
     height: 30rem;
-    width: 80rem;
+    width: 100rem;
 }
 
 .rarity-img {
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
-color: white;
-font-size: 60px;
-display:flex;
+    color: white;
+    font-size: 60px;
+    display:flex;
     justify-content: left;
     align-items: center;
+    padding-left: 3rem;
 }
 
 .rarity-img > img {
@@ -306,7 +314,7 @@ display:flex;
 
 .team-img{
     margin-top: 20rem;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
@@ -328,7 +336,9 @@ display:flex;
     text-align: left;
     padding-left: 150px;
     width: 200px;
+    cursor: pointer;
 }
+
 
 .h5{
     font-family: 'Nunito-Regular', Fallback, sans-serif;
