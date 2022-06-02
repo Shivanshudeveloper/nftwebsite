@@ -31,7 +31,7 @@ html {
 }
 
 .intro {
-    margin-top: 10rem;
+    margin-top: -7rem;
     margin-left: auto;
     margin-right: auto;
     width:40%;
@@ -549,6 +549,45 @@ display:flex;
 .raritytext-content4{
     margin-left: 18rem;
     margin-top: -2rem;
+   position: absolute;
+    text-align: center;
+    font-family: 'Funhouse-Ke17', Fallback, sans-serif;
+    color:white;
+    font-size: 30px;
+}
+
+.footer-logo{
+    margin-top: -3rem;
+    margin-left: 50rem;
+   position: absolute;
+    text-align: center;
+    font-family: 'Funhouse-Ke17', Fallback, sans-serif;
+    color:white;
+    font-size: 30px;
+}
+
+.footer-logo2{
+    margin-top: -3rem;
+    margin-left: 54rem;
+   position: absolute;
+    text-align: center;
+    font-family: 'Funhouse-Ke17', Fallback, sans-serif;
+    color:white;
+    font-size: 30px;
+}
+
+.footer-logo3{
+    margin-top: -3rem;
+    margin-left: 58rem;
+   position: absolute;
+    text-align: center;
+    font-family: 'Funhouse-Ke17', Fallback, sans-serif;
+    color:white;
+    font-size: 30px;
+}
+.footer-logo4{
+    margin-top: -3rem;
+    margin-left: 62rem;
    position: absolute;
     text-align: center;
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
