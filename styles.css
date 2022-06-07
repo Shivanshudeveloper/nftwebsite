@@ -298,7 +298,7 @@
 }
 
 .road {
-    width: 70rem;
+    width: 99rem;
     margin-left: -7.9px;
     /* margin-top: 50rem; */
     /* left: -20px; */
@@ -467,6 +467,7 @@ display:flex;
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
     color:white;
     font-size: 55px;
+    cursor: pointer;
 }
 .team-content{
     margin-top: 17rem;
