@@ -99,13 +99,12 @@
             display: block;
             text-align: left;
     } 
-    .body-img{max-width: 100%;}
+  
 }  
 
 @media only screen and (min-width: 600px) {
     
     .col-s-6 {width: 50%;}
-    .body-img{width: 100%;}
   }
 
   @media only screen and (min-width: 768px) {
@@ -174,8 +173,7 @@
 
 .img-benefits > img {
     width: 300px;
-    z-index: -1;
-    position: relative;
+    height: auto;
 }
 
 .benefits-img {
