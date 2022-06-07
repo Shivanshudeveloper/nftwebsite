@@ -1,6 +1,13 @@
-html {
+.body-img {
     background-image: url("./images/wholebg.png");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+#wrapper {
+    width: 500px;
+    margin: 0 auto;
 }
 
 @font-face {
@@ -13,21 +20,101 @@ html {
     src: url("./Fonts/Nunito-Regular.ttf") format("truetype");
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
 .join-discord-btn {
     margin-left: auto;
     margin-right: auto;
     width: 25%;
     margin-top: 43%;
+    cursor: pointer;
 }
+.header {
+    overflow: hidden;
+    padding: 20px 10px;
+    max-width: 100%;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    padding-left: 40px;
+    max-width: 200px;
+  }
+  
+  .header a.active {
+    color: black;
+    font-family: 'Nunito-Regular', Fallback, sans-serif;
+  }
+  
+  .header-right {
+    float: right;
+    margin-top: 2rem;
+    margin-right: 5rem;
+  }
+
+  .footer {
+    overflow: hidden;
+    padding: 20px 10px;
+    margin-left: 8rem;
+  }
+  
+  .footer a {
+    float: left;
+    color: black;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .footer a.img {
+    max-width: 200px;
+  }
+  
+  .footer a.active1 {
+    color: black;
+    font-family: 'Nunito-Regular', Fallback, sans-serif;
+  }
+  
+  .footer-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .footer a{
+            float: none;
+            display: block;
+            text-align: left;
+    } 
+    .body-img{max-width: 100%;}
+}  
+
+@media only screen and (min-width: 600px) {
+    
+    .col-s-6 {width: 50%;}
+    .body-img{width: 100%;}
+  }
+
+  @media only screen and (min-width: 768px) {
+    .col-9 {width: 75%;}
+  }
+  
 
 .join-discord-btn > img {
     padding: auto;
-    cursor: pointer;
 }
 
 .intro-head, .roadmap-head{
@@ -36,9 +123,15 @@ a {
     font-size: 60px;
 }
 
+.intro-head{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .intro {
     margin-top: -7rem;
-    margin-left: auto;
+    margin-left: 30rem;
     margin-right: auto;
     width:40%;
 }
@@ -46,6 +139,14 @@ a {
 .content-intro, .roadmap-content {
     font-family: 'Nunito-Regular', Fallback, sans-serif;
     color: white;
+}
+
+.content-intro{
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 
 .benefits-head {
@@ -81,9 +182,29 @@ a {
     display:flex;
     justify-content: center;
     align-items: center;
+
 }
 
+
 .benefits-content {
+    display:flex;
+    align-items: center;
+
+    /*\\ width: 700px; */
+    font-family: 'Nunito-Regular', Fallback, sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.benefits-content2{
+        display:flex;
+        align-items: center;
+        /*\\ width: 700px; */
+        font-family: 'Nunito-Regular', Fallback, sans-serif;
+        color: white;
+        font-size: 15px;
+}
+.benefits-content3 {
     display:flex;
     align-items: center;
     /*\\ width: 700px; */
@@ -103,21 +224,25 @@ a {
 .text1 {
     margin-top: -20rem;
     text-align: left;
+    position: relative;
     padding-left: 150px;
     width: 200px;
+    
 }
 
 .text2, .text3 {
     margin-top: -20rem;
     width: 200px;
+    position: relative;
 }
 
 .text2 {
-    
+    margin-left: 21rem;
     padding-left: 320px;
 }
 
 .text3{
+    margin-left: 53rem;
     padding-left: 310px;
 }
 .roadmap-head {
@@ -126,6 +251,16 @@ a {
     justify-content: center;
     align-items: center;
     
+}
+
+.introduction-head{
+    font-family: 'Funhouse-Ke17', Fallback, sans-serif;
+    color: white;
+    font-size: 50px;
+    margin-top: -4rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .roadmap-content {
@@ -163,8 +298,9 @@ a {
 }
 
 .road {
-    width: 99rem;
+    width: 70rem;
     margin-left: -7.9px;
+    /* margin-top: 50rem; */
     /* left: -20px; */
     /* right:-0px; */
     /* position: relative; */
@@ -183,16 +319,17 @@ a {
     margin-top: 2rem;
 }
 
-.nft-showcase > img {
+.nft-showcase > img {    
     height: 30rem;
     width: 100rem;
+
 }
 
 .rarity-img {
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
-    color: white;
-    font-size: 60px;
-    display:flex;
+color: white;
+font-size: 60px;
+display:flex;
     justify-content: left;
     align-items: center;
     padding-left: 3rem;
@@ -214,37 +351,46 @@ a {
 
 .rarity-img1{
     position: absolute;
+    height: auto;
     padding-right: 30px;
 }
 .rarity-img2{
     position: absolute;
+    height: auto;
     padding-right: 30px;
 
 }
 .rarity-img3{
     position: absolute;
+    height: auto;
     padding-right: 30px;
 
 }
 .rarity-img4{
     position: absolute;
+    height: auto;
     padding-right: 30px;
 }
+
 .rarity1{
     position: absolute;
+    height: auto;
     padding-right: 30px;
 
 }
 .rarity2{
     position: absolute;
+    height: auto;
     padding-right: 30px;
 }
 .rarity3{
     position: absolute;
+    height: auto;
     padding-right: 30px;
 }
 .rarity4{
     position: absolute;
+    height: auto;
     padding-right: 30px;
 }
 
@@ -310,18 +456,18 @@ a {
 }
 .showcase-img{
     padding-left: 100px;
+    height: auto;
 }
 
 .team-img{
     margin-top: 20rem;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
     color:white;
     font-size: 55px;
 }
-
 .team-content{
     margin-top: 17rem;
     text-align: center;
@@ -336,9 +482,7 @@ a {
     text-align: left;
     padding-left: 150px;
     width: 200px;
-    cursor: pointer;
 }
-
 
 .h5{
     font-family: 'Nunito-Regular', Fallback, sans-serif;
@@ -448,6 +592,7 @@ a {
 }
 
 .logo-img{
+    margin-top: -2rem;
     padding-left: 40px;
     max-width: 300px;
 }
@@ -532,7 +677,7 @@ a {
 .raritytext-content{
     margin-right: 45rem;
     margin-top: 8rem;
-   position: absolute;
+    position: absolute;
     text-align: center;
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
     color:white;
@@ -541,7 +686,7 @@ a {
 .raritytext-content2{
     margin-right: 5rem;
     margin-top: 8rem;
-   position: absolute;
+    position: absolute;
     text-align: center;
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
     color:white;
@@ -550,7 +695,7 @@ a {
 .raritytext-content3{
     margin-left: 33rem;
     margin-top: 10rem;
-   position: absolute;
+    position: absolute;
     text-align: center;
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
     color:white;
@@ -559,7 +704,7 @@ a {
 .raritytext-content4{
     margin-left: 18rem;
     margin-top: -2rem;
-   position: absolute;
+    position: absolute;
     text-align: center;
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
     color:white;
@@ -569,7 +714,7 @@ a {
 .footer-logo{
     margin-top: -3rem;
     margin-left: 50rem;
-   position: absolute;
+   position: relative;
     text-align: center;
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
     color:white;
@@ -577,9 +722,9 @@ a {
 }
 
 .footer-logo2{
-    margin-top: -3rem;
+    margin-top: -2.5rem;
     margin-left: 54rem;
-   position: absolute;
+   position: relative;
     text-align: center;
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
     color:white;
@@ -587,18 +732,17 @@ a {
 }
 
 .footer-logo3{
-    margin-top: -3rem;
+    margin-top: -2.5rem;
     margin-left: 58rem;
-   position: absolute;
     text-align: center;
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
     color:white;
     font-size: 30px;
 }
 .footer-logo4{
-    margin-top: -3rem;
+    margin-top: -2.2rem;
     margin-left: 62rem;
-   position: absolute;
+    position: relative;
     text-align: center;
     font-family: 'Funhouse-Ke17', Fallback, sans-serif;
     color:white;
